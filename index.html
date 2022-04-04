@@ -5,51 +5,216 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</head>
+    <script src="https://kit.fontawesome.com/4f2385cc7b.js" crossorigin="anonymous"></script>
+  </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <!-- <section class="navbar1" id="navBar" style="display: flex;">
+    <div>
+      <img src="" alt="logo" class="logo">
+    </div>
+    <ul>
+      <li class="listItem"><a href="">Home</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">About</a></li>
+
+    </ul>
+  </section> -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#about">
+        <img src="/images/coding.jpg" alt="logo" class="img-fluid rounded-circle" style="width: 70px; height: 70px; object-fit: cover;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="about" class="p-5">
+    <h3 class="text">About Me</h3>
+    <div class="container">
+      <div class="row m-5">
+        <div class="col">
+          <img src="/images/coding.jpg" alt="" class="img-fluid rounded" style="height: 370px;width: 700px; object-fit: cover; box-shadow: 5px 5px 10px black;" >
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum laboriosam itaque, perferendis error est molestias perspiciatis ratione laudantium cum, soluta eligendi eius! 
+            Delectus possimus cumque, labore sunt mollitia dolorum.
+            Delectus possimus cumque, labore sunt mollitia dolorum
+            Delectus possimus cumque, labore sunt.
+            Delectus possimus cumque, labore sunt mollitia dolorum.
+            Delectus possimus cumque, labore sunt mollitia dolorum
+            Delectus possimus cumque, labore sunt.
+            Delectus possimus cumque, labore sunt mollitia dolorum.
+            Delectus possimus cumque, labore sunt mollitia dolorum
+            Delectus possimus cumque, labore sunt.
+            Delectus possimus cumque, labore sunt mollitia dolorum.
+            Delectus possimus cumque, labore sunt mollitia dolorum
+            Delectus possimus cumque, labore sunt.
+            Delectus possimus cumque, labore sunt mollitia dolorum.
+            Delectus possimus cumque.</p>
+            <!-- <button class="btn  btn-info">Download Resume</button> -->
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+See My Resume
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Curriculum Vitae</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quae recusandae doloribus ipsum, magni temporibus quisquam veniam doloremque tempora incidunt accusantium fugit quis velit asperiores rem et ut molestiae similique quam illo minima aut pariatur totam? Odio quod tempore accusamus natus nobis perferendis ipsum neque, eius hic et beatae nostrum atque adipisci doloribus odit minus, assumenda reprehenderit asperiores facilis impedit vel dicta! Commodi blanditiis, deleniti nam, nulla dicta accusamus necessitatibus assumenda quam aspernatur magni iure illum minima alias quisquam, tempore ab fuga voluptates amet. Minus aliquid autem, reiciendis ducimus praesentium sint, at recusandae possimus vero reprehenderit modi a impedit molestias! Perferendis non dolores mollitia molestias ratione nihil voluptatum tenetur tempora animi numquam maiores at architecto quae delectus facere amet, doloribus soluta itaque, modi vel odio. Dignissimos laborum sint, corporis exercitationem neque ipsam rerum, earum molestias officia molestiae blanditiis dolore sunt sed! Repellendus soluta non numquam vel architecto ipsam nulla, vero doloribus pariatur provident alias temporibus neque aut fugiat reiciendis quibusdam veniam quos amet culpa corrupti ratione asperiores animi. Soluta, labore? Quibusdam, pariatur amet facilis architecto eaque quae? Quos ipsam deleniti ullam, necessitatibus incidunt illo deserunt autem, velit similique soluta, perspiciatis voluptas? Amet, facilis! Porro incidunt doloremque accusantium, voluptates voluptas ipsum aliquid velit suscipit ducimus dolor laboriosam sapiente ea eveniet nostrum! Doloremque cupiditate reiciendis quis vel a iure quidem excepturi recusandae voluptatum sint sequi officiis quas incidunt ullam eligendi deleniti, libero sit, accusantium dolorem veritatis, voluptatem nam? Dolores voluptate vero molestias tempore praesentium obcaecati dolor reiciendis consectetur ad. Eum consequuntur rem repellendus nemo neque facilis veniam expedita provident quisquam qui vero maxime nesciunt, nulla, eligendi blanditiis inventore rerum, quis perspiciatis molestiae architecto fugiat. Similique at laudantium repudiandae rem officiis ratione sunt, repellat quam dignissimos quidem, necessitatibus expedita deleniti recusandae quis? Fuga alias reiciendis in, nisi, cupiditate esse quibusdam beatae architecto, qui assumenda neque minus provident placeat laborum. Vero obcaecati adipisci doloremque dolor cum ea officiis ipsa quae saepe itaque nesciunt laudantium, impedit harum autem eveniet veniam iste nemo quod! Iste enim ut magni quas, nulla doloribus. Numquam eum animi qui rerum fuga dolore, mollitia ab sapiente voluptatum officiis voluptatem id eos necessitatibus voluptatibus ea dolorum facere consequatur iste ipsam esse inventore veniam. Error cupiditate et itaque assumenda iure, dolores aliquam rem! Veniam obcaecati perspiciatis suscipit ipsam, beatae, quos nostrum, consequatur deserunt error sapiente sequi debitis. Nisi veniam iure vitae. Dolorum earum asperiores quasi! Ipsa cumque, minus, officiis, asperiores laudantium fugit molestias unde accusamus modi odio molestiae corporis harum ex aut alias! Necessitatibus velit quis quaerat placeat, voluptas doloribus cumque praesentium magni ipsum repellendus animi accusantium maiores porro rem quia accusamus recusandae quod quos. Eum perspiciatis neque esse. Neque similique rem blanditiis deleniti modi accusantium dolorum velit, ut libero ipsum nemo minus aperiam voluptatibus quibusdam odit dicta? Aspernatur sapiente, veritatis maiores, ipsam incidunt facilis quasi vel, laboriosam minus eum veniam recusandae animi ullam delectus dolor repudiandae magni saepe tempora voluptates quia nostrum dicta! Modi aliquid voluptas velit quaerat molestias, distinctio nulla optio quod voluptatum odit quibusdam tenetur rem alias aut fugiat laboriosam molestiae deserunt a ea soluta earum provident? Est voluptates, excepturi deserunt sint tempore quis repudiandae non mollitia magnam dolores ipsa doloribus saepe nobis nihil aperiam necessitatibus consectetur! Ex assumenda accusantium possimus rerum odit ullam, quibusdam saepe suscipit rem iure adipisci vero soluta facere atque laborum architecto dicta alias, exercitationem officia tenetur tempora praesentium veritatis et aperiam? Laudantium, veniam! Rem, iusto nesciunt? Cupiditate voluptates alias perferendis corrupti asperiores eveniet ea ut soluta nesciunt. Quam quas nemo atque minima eligendi, laborum natus, praesentium illum sunt hic quae maxime architecto temporibus autem, repellendus illo molestiae qui at. Delectus fugit vitae quasi aspernatur illum magni. Blanditiis optio soluta placeat repudiandae sed necessitatibus dolorem impedit atque excepturi nulla aut labore error, at voluptas magni pariatur aliquid. Delectus illum sed obcaecati recusandae tenetur, cupiditate itaque ut deleniti commodi non ipsa, pariatur consequatur numquam exercitationem. Quod veritatis, dolorum quaerat commodi explicabo ea recusandae atque quisquam quis blanditiis, ipsa maiores iure consequatur fugiat, magni ex exercitationem voluptas ab ipsam? Maxime, odio fugiat. Reprehenderit quos pariatur soluta dolorem eius dolorum alias, eaque nam velit deleniti vel explicabo sequi repellat delectus mollitia dolores perspiciatis vero ratione ex excepturi incidunt? Dolorem laudantium repudiandae minima aliquam doloremque suscipit reprehenderit blanditiis, veritatis hic officia explicabo a sequi saepe molestias, quia rem reiciendis nesciunt dolore culpa ducimus natus esse! Aperiam cupiditate delectus est numquam, sunt explicabo officiis at, minus nulla rem expedita error eius blanditiis quod commodi aliquid debitis ab sapiente quisquam. Accusamus ipsam molestias aut obcaecati dolor, iste perferendis ut animi? Vel dignissimos natus necessitatibus laboriosam id temporibus possimus nam, eos officiis ut ullam ipsam cumque adipisci obcaecati non corporis rerum aliquam quos est sapiente quisquam. Sequi fugiat eius sit fuga esse doloremque porro architecto nemo, ipsum ducimus. Saepe, illo voluptates. Impedit rem fugi
+          t obcaecati eum dicta totam minima nesciunt sint repellendus veritatis?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="p-5">
+    <h3 class="text">My Recent Work</h3>
+    <div class="container">
+      <div class="row m-5">
+        <div class="col">
+          <div class="card" style="width: 15rem;;">
+            <img src="/images/coding.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
           </div>
         </div>
-      </nav>
-    
-    <button class="btn btn-primary">bootstrap</button>
-    <!-- Colours -->
-    <p class="text-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque incidunt iste nemo possimus magni necessitatibus dolore expedita vitae natus hic, tempora quod recusandae ad q
-        uisquam laudantium est delectus sint ipsa?</p>
+        <div class="col">
+          <div class="card" style="width: 15rem;">
+            <img src="/images/coding.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 15rem; ">
+            <img src="/images/coding.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 15rem;">
+            <img src="/images/coding.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </section>
+  <section id="services" class="p-5">
+    <h3 class="text">My Services</h3>
+    <div class="container">
+      <div class="row m-5">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <span class="text">
+              <i class="fa-brands fa-js-square h1"></i>
+            </span>
+          
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <span class="text">
+              <i class="fa-brands fa-html5 h1"></i>
+            </span>
+          
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <span class="text">
+              <i class="fa-brands fa-css3 h1"></i>
+            </span>
+          
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <span class="text">
+              <i class="fa-brands fa-php h1"></i>
+            </span>
+          
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      </div>
+      
+    </div>
+  </section>
 </body>
 </html>
