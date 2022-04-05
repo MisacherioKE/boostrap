@@ -34,3 +34,15 @@ section{
    margin-top: 0;
    margin-bottom: 0;
 }
+.message{
+    height: 200px;
+    width: 650px;
+    border-radius: 20px;
+    margin-top: 5%;
+    border: none;
+    background-color: white;
+    overflow: scroll;
+}
+.fa-heart{
+    color: red;
+}
